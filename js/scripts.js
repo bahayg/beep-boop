@@ -4,12 +4,37 @@ $(document).ready(function(){
 
     var userInput = parseInt($("input#user-input").val());
     var numbers = [...Array(userInput).keys()];
+    var output = numbers + "," + userInput
+
+        //console.log(output);
+
+    var two = output.includes("2");
+    for (var i = 0; i<=output.length; i++) {
+      if two
+        alert (boop);
+      }
+    }
+
+
+    // var output = [];
+    //      for (let i=0; i<=userInput; i+=1) {
+    //        output += userInput;
+    //output.push(i);
+    //return output;
+
     //var numbersEnd = numbers.includes(userInput,end)
-    console.log(numbers);
+    //console.log(numbers);
+
+    // if (isNaN(userInput)) {
+    //   alert("That is not a number!");
+    // }
+    //         else if (input = )
+    // if(text.includes("3")) reply ()
 //.includes(userInput, end)
     // var userInput = parseInt($("input#user-input").val());
     // var numbers = Array.from(Array(userInput)).keys());
-    //   console.log(numbers);
+
+  //}
   });
  });
 
@@ -33,10 +58,7 @@ $(document).ready(function(){
 //   //  console.log(range(4, 12));
 // }
 
-// if (isNaN(userInput)) {
-//         alert("That is not a number!");
-//         else if (input = )
-// if(text.includes("3")) reply ()
+
 //
 
 // function printNumbers(number) {
