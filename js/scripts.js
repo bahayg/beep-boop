@@ -6,16 +6,16 @@ $(document).ready(function(){
     var numbers = [...Array(userInput).keys()];
     var output = numbers + "," + userInput
 
-        //console.log(output);
 
-    var two = output.includes("2");
+    // console.log(output);
+
     for (var i = 0; i<=output.length; i++) {
-      if two
-        alert (boop);
+      if (i === 1) {
+        alert ("boop");
       }
     }
 
-
+//var two = output.includes("2");
     // var output = [];
     //      for (let i=0; i<=userInput; i+=1) {
     //        output += userInput;
