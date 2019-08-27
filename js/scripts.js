@@ -3,66 +3,25 @@ $(document).ready(function(){
     event.preventDefault();
 
     var userInput = parseInt($("input#user-input").val());
-    var numbers = [...Array(userInput).keys()];
-    var output = numbers + "," + userInput
+    var numbers = [...Array(userInput+1).keys()];
+    var output = [];
 
-
-    // console.log(output);
-
-    for (var i = 0; i<=output.length; i++) {
-      if (i === 1) {
-        alert ("boop");
-      }
-    }
-
-//var two = output.includes("2");
-    // var output = [];
-    //      for (let i=0; i<=userInput; i+=1) {
-    //        output += userInput;
-    //output.push(i);
-    //return output;
-
-    //var numbersEnd = numbers.includes(userInput,end)
     //console.log(numbers);
-
-    // if (isNaN(userInput)) {
-    //   alert("That is not a number!");
-    // }
-    //         else if (input = )
-    // if(text.includes("3")) reply ()
-//.includes(userInput, end)
-    // var userInput = parseInt($("input#user-input").val());
-    // var numbers = Array.from(Array(userInput)).keys());
-
-  //}
+    for (var i = 0; i<=userInput; i++) {
+      if (numbers[i].toString().includes("3")) {
+        output.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      } else if (numbers[i].toString().includes("2")) {
+        output.push("Boop!");
+      } else if (numbers[i].toString().includes("1")) {
+        output.push ("Beep!");
+      } else {
+      output.push (i);}
+    }
+    //console.log(output);
+    $(".result").show();
+    $(".output").text(output);
+    });
   });
- });
-
-
- //     var output = [];
- //     for (let i=0; i<=userInput; i+=1) {
- //     //for (let i of math.range(0, userInput)){
- //         output.push(i);
- //         console.log(output);
- //         //return output;
- // }
-
-
-//    //function range(start=0, end=userInput, step=1) {
-//   //    var myArray = [];
-//   //    for (i = 0; i <= userInput; i += 1) {
-//   //      myArray.push(i);
-//   //    }
-//   //    return myArray;
-//   // //};
-//   //  console.log(range(4, 12));
-// }
-
-
-//
-
-// function printNumbers(number) {
-//   var output = "";
-//   for( var i=0; i<userInput; i++ ){
-//     alert( i );
-//   });
+  // // if (isNaN(userInput)) {
+  // //   alert(userInput + " is not a number!");
+  // // }
