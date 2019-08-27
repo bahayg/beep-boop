@@ -15,11 +15,11 @@ $(document).ready(function(){
       } else if (numbers[i].toString().includes("1")) {
         output.push ("Beep!");
       } else {
-      output.push (i);}
-    }
-    //console.log(output);
-    $(".result").show();
-    $(".output").text(output);
+        output.push (i);}
+      }
+      //console.log(output);
+      $(".result").show();
+      $(".output").text(output);
     });
   });
   // // if (isNaN(userInput)) {
